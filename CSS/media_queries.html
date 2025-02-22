@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            display: none;
+        }
+        @media only screen and (max-width: 300px){
+            #box-1{
+                display: block ;
+            }
+        }
+        @media only screen and (min-width: 300px) and (max-width: 500px){
+            #box-2{
+                display: block ;
+                background-color: brown;
+                
+            }
+        }
+        @media only screen and (min-width: 800px) and (max-width: 1000px) {
+            #box-3{
+                display: block ;
+                background-color: blueviolet;
+            }
+        } 
+        @media only screen and (min-width: 800px) and (max-width: 1000px) {
+            #box-3{
+                display: block ;
+                background-color: blueviolet;
+            }
+        } 
+        @media only screen and (min-width: 1000px)  {
+            #box-3{
+                display: block ;
+                background-color: red;
+            }
+        } 
+
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"> Android</div>
+    <div class="box" id="box-2">Tablet</div>
+    <div class="box" id="box-3">Laptop</div>
+    <div class="box" id="box-4">PC</div>
+</body>
+</html>
