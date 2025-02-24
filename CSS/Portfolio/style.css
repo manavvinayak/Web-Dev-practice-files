@@ -350,12 +350,13 @@ body{
 
 .home-content h3 {
     font-size: 20px;
+    top: 50%;
 }
 
 /* Fix text alignment & spacing */
 .home-content {
     text-align: center;
-    padding: 20px 5%;
+    padding: 20px 15%;
 }
 
 /* Fix button positioning */
@@ -366,8 +367,9 @@ body{
     justify-content: center;
     width: 100%;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
+   
 
 /* Fix overall layout width */
 body {
@@ -379,5 +381,6 @@ body {
 .home-imgHover {
     visibility: hidden;
 }
+
 
 }
