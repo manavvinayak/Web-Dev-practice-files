@@ -6,5 +6,6 @@ function sum(n) {
     }
     return ans;
 }
-const ans = sum(23)
+const ans = sum(33)
+// sum will be 1 + ......33
 console.log(ans)
