@@ -1,0 +1,128 @@
+
+.full {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.top {
+   display: flex;
+   height: 50vh;
+   width: 100vw;
+   align-items: center;
+   justify-content: space-between;
+   background-image: url('https://images.unsplash.com/photo-1580892047528-7dfd384dce65?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+   background-position: center;
+   background-size: cover;
+   color: #eef1f7;
+   font-weight: 700px;
+}
+
+.tag {
+    font-size: 3vw;
+    margin-top: 14vh;
+    margin-bottom: 3vh;
+    width: 40vw;
+    padding: 4vw;
+    margin-left: 7vw;
+    color:  #fff;
+}
+
+.l-box {
+    width: 20vw;
+    margin-top: 14vh;
+    margin-right: 7vw;
+}
+.c-box {
+     width: 20vw;
+     margin-top: 14vh;
+     margin-right: 4vw;
+}
+
+.r-box {
+    width: 20vw;
+    margin-top: 14vh;
+    margin-right: 4vw;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    margin-top: 5vh;
+     font-size: 24px;
+     color: #c7d0e0;
+}
+
+.bottom {
+    display: flex;
+    height: 50vh;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.bone {
+    background-image: url('https://plus.unsplash.com/premium_photo-1676218969686-ec6fa0eaa487?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: top;
+    background-size: cover;
+    width: 25vw;
+    height: 50vh;
+}
+.bone h4{
+    margin-left: 5vw;
+    margin-top: 6vh;
+    font-size: 20px;
+    color: #789596;
+}
+
+.bone button {
+    margin-top: 11vh;
+    margin-left: 5vw;
+    background-color: #7e8d8a; /* Teal color for a fresh look */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    padding: 12px 20px; /* Add some spacing */
+    font-size: 14px; /* Set a readable font size */
+    font-weight: bold; /* Make text stand out */
+    border-radius: 15px; /* Rounded corners for a softer appearance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.btwo {
+    width: 50vw;
+    height: 50vh;
+    background-image: url('https://images.unsplash.com/uploads/1412026095116d2b0c90e/3bf33993?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+     align-items: center;
+}
+
+
+.btwo h4{
+    font-size: 2vw;
+    margin-top: 5vh;
+    margin-left: 4vw;
+    color: gray;
+}
+
+
+.footer {
+    margin-top: 17vh;
+    margin-left: 5vw;
+    color: #789596;
+    font-weight: bold;
+}
+
+.btwo1 {
+    height: 30vh;
+    
+}
+
+
+.bthree {
+    background-image: url('https://images.unsplash.com/photo-1486916856992-e4db22c8df33?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: right;
+    background-size: cover;
+    width: 25vw;
+}
