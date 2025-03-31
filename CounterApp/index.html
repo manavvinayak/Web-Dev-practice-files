@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full">
+        <div class="header">
+            <h2>Welcome to Counter-App 
+            </h2>           
+            <h4>By VinDev.</h4>
+        </div>
+
+        <div class="display">
+            <p id="count">0</p>
+        </div>
+        <div class="btn">
+            <button type="button" onclick="inc()">Increment</button>
+            <button onclick="dec()">Decrement</button>
+            <button type="reset" onclick="res()">Reset</button>
+        </div>
+        <div class="clicks">
+             <p>No. of clicks on increment: <span id="incCounts">0</span></p>
+             <p>No. of clicks on decrement: <span id="decCounts">0</span></p>
+             <p>No. of clicks on Reset: <span id="resCounts">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
