@@ -1,0 +1,133 @@
+/* * {
+  align-items: center;
+} */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    margin-left: 5vw;
+    background-image: url('https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=1855&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    font-family: "Montserrat", sans-serif; 
+  
+}
+
+
+code {
+  font-family: "Montserrat", sans-serif;   
+}
+
+/* Header styling */
+.header {
+  margin-left: 30vw; 
+  color: #FFFFFF;
+  font-size: 54px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#title {
+  position: relative;
+  font-size: 4vh;
+  gap: 4;
+  align-items: center;
+  display: flex;
+  margin-bottom: 3vh;
+  margin-left: 13vw;
+  background-color: transparent;
+    border: 2px solid #00abf0 ;
+    color: #FFFFFF;
+    border-radius: 10px;
+  font-weight: 700;
+}
+
+#desc {
+  font-size: 4vh;
+  cursor:text;
+  background-color: transparent;
+    border: 2px solid #00abf0 ;
+    color: #FFFFFF;
+  font-weight: 700;
+  margin-left: 13vw;
+
+}
+
+#btn {
+    position: relative;
+    margin-left: 13vw;
+    margin-top: 3vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #00abf0 ;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    font-weight: 700;
+    transition: .5s;
+}
+
+
+/* Container for the todo list */
+.todo-list {
+  display: flex;
+  flex-direction: row; /* Stack todo items vertically */
+  width:auto; /* Set a fixed width for the todo list */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 10px;
+  background-color: transparent;
+  border: 4px solid white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual todo item */
+.todo-item {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for todo items */
+.todo-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling */
+.todo-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* Description styling */
+.todo-item p {
+  margin: 5px 0 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+
