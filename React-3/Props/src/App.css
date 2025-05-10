@@ -1,0 +1,20 @@
+.parent {
+   
+  background-color: #dfe6e9;
+   height: 100vh;
+   
+}
+
+.card {
+  display: flex; /* Enable Flexbox for the cards */
+  flex-direction: column; /* Stack the cards vertically */
+  justify-content: center; /* Center the cards vertically */
+  align-items: center; /* Center the cards horizontally */
+  height: 100%; /* Take full height of the parent */
+}
+
+
+.value {
+  font-size: 14;
+  margin-left: 14px;
+}
