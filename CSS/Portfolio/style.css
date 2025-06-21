@@ -13,7 +13,7 @@ body{
 }
 
 .header{
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -145,6 +145,7 @@ body{
 .home-content .btn-box{
     position: relative;
     display: flex;
+     gap: 13px;
     justify-content: space-between;
     width: 345px;
     height: 50px;
@@ -325,62 +326,304 @@ body{
    }
 }
 
-/* Responsive styles for mobile screens */
-@media (max-width: 800px) {
-    /* Prevent navbar from overlapping */
-.header {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 5%;
+/* Mobile View Styles */
+@media only screen and (max-width: 500px) {
+    /* Header adjustments */
+    .header {
+      padding: 1rem;
+      position: relative;
+    }
+    
+    /* Hamburger menu styles */
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 30px;
+      height: 21px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    
+    .hamburger-line {
+      width: 100%;
+      height: 3px;
+      background: #333;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+    }
+    
+    /* Navbar styles for mobile */
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background: #fff;
+      box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+      transition: right 0.3s ease;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+    
+    .navbar.active {
+      right: 0;
+    }
+    
+    .navbar a {
+      font-size: 1.2rem;
+      padding: 10px 0;
+      display: block;
+    }
+    
+    /* Home section adjustments */
+    .home {
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .home-content h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    
+    .home-content h3 {
+      font-size: 1.2rem;
+    }
+    
+    .home-content p {
+      font-size: 0.9rem;
+      margin: 1rem 0;
+    }
+    
+    .btn-box {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .btn-box a {
+      width: 100%;
+    }
+    
+    .home-sci {
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    
+    /* Hide hamburger on desktop */
+    .hamburger {
+      display: none;
+    }
+  }
+  
+  /* Hamburger animation styles */
+  .hamburger-line.rotate-down {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger-line.rotate-up {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .hamburger-line.hide {
+    opacity: 0;
+  }
+  
+  /* Prevent scrolling when menu is open */
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  /* Desktop styles - hide hamburger */
+  @media only screen and (min-width: 769px) {
+    .hamburger {
+      display: none;
+    }
+  }
+
+  /* ===== About Section ===== */
+.About {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 80px 10%;
+  background: #081b29;
+  gap: 3rem;
 }
 
-.navbar {
+.About .image img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  border: 4px solid #00abf0;
+  object-fit: cover;
+}
+
+.About .para1 p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #00abf0;
+}
+
+/* ===== Experience Section ===== */
+.Experience {
+  padding: 80px 10%;
+  background: #081b29;
+}
+
+.Experience .heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00abf0;
+  text-align: center;
+}
+
+.job-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-left: 3px solid #00abf0;
+  border-radius: 8px;
+}
+
+.timeline {
+  font-weight: bold;
+  color: #00abf0;
+  margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.timeline-content p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* ===== Achievements Section ===== */
+.Achievements {
+  padding: 80px 10%;
+  background: #0f3248;
+}
+
+.Achievements h2 {
+  font-size: 2rem;
+  color: #00abf0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.acheive-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.acheive-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #00abf0;
+  transition: transform 0.3s ease;
+}
+
+.acheive-item:hover {
+  transform: translateY(-5px);
+}
+
+.achieve-heading h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.achieve-content p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* ===== Contact Section ===== */
+
+.Contact {
+background: #081b29;
+}
+
+.contact-heading h3 {
+  font-size: 2rem;
+  color: #00abf0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-heading p {
+    text-align: center;
+
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 1rem;
 }
 
-/* Ensure headings scale down properly */
-.home-content h1 {
-    font-size: 32px;
-    line-height: 1.2;
-    word-break: break-word; /* Prevent text from overflowing */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #102a40;
+    color: #fff;
+    resize: none;
+    outline: none;
 }
 
-.home-content h3 {
-    font-size: 20px;
-    top: 50%;
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
 }
 
-/* Fix text alignment & spacing */
-.home-content {
-    text-align: center;
-    padding: 20px 15%;
+.contact-form button {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    background-color: #00abf0;
+    color: #081b29;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
-/* Fix button positioning */
-.btn-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 15px;
-    margin-top: 40px;
-}
-   
-
-/* Fix overall layout width */
-body {
-    overflow-x: hidden; /* Prevent horizontal scroll */
+.contact-form button:hover {
+    background-color: #0093d1;
+    color: #fff;
 }
 
-
-
-.home-imgHover {
-    visibility: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 
-}
+
