@@ -21,7 +21,7 @@ function x() { // use of let here
 // we can use var with the help of closures property
 
 function p() {
-  for(var i=1; i <= 5; i++){
+  for(var i=1; i <= 7; i++){
      function close(c) {
         setTimeout(() => {
           console.log(c);
@@ -31,3 +31,6 @@ function p() {
   }
 }
 p();
+let c = 90;
+console.log(c)
+// in conflicting situation, even though variable is printed ,and at topmost too!
